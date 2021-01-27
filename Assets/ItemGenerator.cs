@@ -7,6 +7,7 @@ public class ItemGenerator : MonoBehaviour
     public GameObject coinPrefab;
     public GameObject conePrefab;
     public GameObject unitychan;
+    public GameObject Camera;
     private int startPos = 80;
     private int goalPos = 360;
     private float posRange = 3.4f;
@@ -52,13 +53,5 @@ public class ItemGenerator : MonoBehaviour
             }
                 positionZ = positionZ + 15;
         }
-    }
-
-
-
-
-    void OnBecameInvisible()
-    {
-        GameObject.Destroy(this.gameObject);
     }
 }
